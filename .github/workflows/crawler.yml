@@ -21,7 +21,8 @@ jobs:
           sudo timedatectl set-timezone Asia/Shanghai
           date
       
-      - name: Add domain mapping to hosts
+      - name: 增加域名hosts并验证
+        continue-on-error: true
         run: |
           echo "36.156.81.221 www.mca.gov.cn" | sudo tee -a /etc/hosts
           echo "36.156.173.115 gi.mnr.gov.cn" | sudo tee -a /etc/hosts
