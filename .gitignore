@@ -25,6 +25,7 @@ json_structure.md
 
 # 日志、数据
 *.log
+*.sql
 *.sqlite3
 *.db
 *.csv
